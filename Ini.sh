@@ -70,6 +70,12 @@ sudo add-apt-repository ppa:fossfreedom/rhythmbox
 sudo apt-get update
 sudo apt-get install rhythmbox
 
+#-----Imagemagick
+sudo apt install php php-common gcc
+sudo apt install imagemagick
+sudo apt install php-imagick
+sudo systemctl restart apache2
+
 #--Clean All Installs
 apt --fix-broken install
 apt-get -y autoremove
