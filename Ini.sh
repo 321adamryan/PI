@@ -38,42 +38,42 @@ sudo apt-get install -y gtk-recordmydesktop
 sudo apt-get install -y taskwarrior
 #--Install Primary Dependant Packages
 #-----Deluge
-sudo apt-get install deluged
+sudo apt-get install -y deluged
 deluge-console python-mako
 deluge-web
 #-----Spotify
 sudo apt-add-repository -y "deb http://repository.spotify.com stable non-free" &&
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59 &&
 sudo apt-get update &&
-sudo apt-get install spotify-client -y --allow-unauthenticated
+sudo apt-get install -y spotify-client -y --allow-unauthenticated
 #-----Audacity
 sudo add-apt-repository ppa:audacity-team/daily
 sudo apt-get update
 sudo apt-get install -y audacity
 #-----Pidgin
 sudo add-apt-repository ppa:kip/pidgin
-sudo apt-get install pidgin
+sudo apt-get install -y pidgin
 #-----LibreOffice
 sudo add-apt-repository ppa:libreoffice/ppa
 sudo apt update; sudo apt dist-upgrade
-sudo apt install libreoffice-gtk2 libreoffice-gnome
+sudo apt-get install -y libreoffice-gtk2 libreoffice-gnome
 #-----Brackets
 sudo add-apt-repository ppa:webupd8team/brackets
 sudo apt-get update
-sudo apt-get install brackets
+sudo apt-get install -y brackets
 #-----Openshot
 sudo add-apt-repository ppa:openshot.developers/ppa
-sudo apt update
-sudo apt install openshot-qt
+sudo apt-get update
+sudo apt-get install -y openshot-qt
 #-----Rhythmbox
 sudo add-apt-repository ppa:fossfreedom/rhythmbox
 sudo apt-get update
-sudo apt-get install rhythmbox
+sudo apt-get install -y rhythmbox
 
 #-----Imagemagick
-sudo apt install php php-common gcc
-sudo apt install imagemagick
-sudo apt install php-imagick
+sudo apt-get install -y php php-common gcc
+sudo apt-get install -y imagemagick
+sudo apt-get install -y php-imagick
 sudo systemctl restart apache2
 
 #--Clean All Installs
