@@ -15,7 +15,7 @@
 #------------------------------------------
 #To Retrieve/Run Script, in Terminal Type:
 # apt-get install wget
-# wget https://github.com/lazryn/PI/blob/master/Ini.sh
+# wget https://raw.githubusercontent.com/lazryn/PI/master/Ini.sh
 # chmod +x Ini.sh
 # ./Ini.sh
 #------------------------------------------
