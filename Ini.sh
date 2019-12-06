@@ -36,17 +36,8 @@ sudo apt-get install -y vlc
 sudo apt-get install -y inkscape
 sudo apt-get install -y gnome-screenshot
 sudo apt-get install -y gtk-recordmydesktop
-sudo apt-get install -y taskwarrior
 
 #--Install Primary Dependant Packages
-#-----Deluge
-sudo apt-get install -y deluged
-deluge-console python-mako
-deluge-web
-#-----Spotify
-sudo apt-add-repository -y "deb http://repository.spotify.com stable non-free" 
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59 
-sudo apt-get install -y spotify-client -y --allow-unauthenticated
 #-----Audacity
 sudo add-apt-repository ppa:audacity-team/daily
 sudo apt-get install -y audacity
