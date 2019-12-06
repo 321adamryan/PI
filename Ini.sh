@@ -22,7 +22,7 @@
 #------------------------------------------
 
 #--Set date and start
-echo -e "\n$(date "+%d-%m-%Y --- %T") --- Starting work\n"
+echo -e "\n$(date "+%d-%m-%Y --- %T") --- Starting work\n" >> IniReport.txt
 
 #--Install Primary Independant Packages
 sudo apt-get update
@@ -87,4 +87,4 @@ apt-get -y autoremove
 apt-get autoclean
 
 #--Terminate Script
-echo -e "\n$(date "+%T") \t Script Terminated"
+echo -e "\n$(date "+%T") \t Script Terminated" >> IniReport.txt
