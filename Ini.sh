@@ -73,6 +73,12 @@ sudo apt-get install -y imagemagick
 sudo apt-get install -y php-imagick
 sudo systemctl restart apache2
 
+#-----Cups
+#--Visit URL for CUPS
+# https://localhost:631
+sudo apt-get -y install cups
+sudo usermod -a -G lpadmin pi
+
 #-----FinalUpdate
 sudo apt-get update
 #--Clean All Installs
