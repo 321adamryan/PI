@@ -42,11 +42,10 @@ sudo apt-get purge --auto-remove -y ncrack
 sudo apt-get purge --auto-remove -y mfoc
 sudo apt-get purge --auto-remove -y libnfc-bin
 sudo apt-get purge --auto-remove -y libnfc5:armhf
-#mfc-mfclassic
 sudo apt-get purge --auto-remove -y aircrack-ng
 sudo apt-get purge --auto-remove -y nasm
 sudo apt-get purge --auto-remove -y metasploit-framework
-#searchsploit
+sudo apt-get purge --auto-remove -y exploitdb
 sudo apt-get purge --auto-remove -y wireshark
 sudo apt-get purge --auto-remove -y wireshark-common
 
