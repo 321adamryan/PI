@@ -2,7 +2,7 @@
 #!/bin/bash
 
 # :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-#       filename: Ini.sh
+#       filename: KaliClean.sh
 #          coder: AdamRyan
 #        program: RaspberryPi Linux/Ubuntuu
 #    description: This is a script to automate the installation of software for RPi
@@ -17,9 +17,9 @@
 #To Retrieve/Run Script, in Terminal Type:
 # sudo apt-get update
 # apt-get install wget
-# wget https://raw.githubusercontent.com/lazryn/PI/master/Ini.sh
-# chmod +x Ini.sh
-# ./Ini.sh
+# wget https://raw.githubusercontent.com/lazryn/PI/master/KaliClean.sh
+# chmod +x KaliClean.sh
+# ./KaliClean.sh
 #------------------------------------------
 
 sudo apt-get purge --auto-remove -y dnsrecon
