@@ -36,6 +36,7 @@ sudo apt-get install -y vlc
 sudo apt-get install -y inkscape
 sudo apt-get install -y gnome-screenshot
 sudo apt-get install -y gtk-recordmydesktop
+sudo apt-get install -y etcher-electron
 
 #--Install Primary Dependant Packages
 #-----Audacity
