@@ -22,36 +22,36 @@
 # ./Ini.sh
 #------------------------------------------
 
-sudo apt-get purge --auto-remove dnsrecon
-sudo apt-get purge --auto-remove nmap
-sudo apt-get purge --auto-remove theharvester
-sudo apt-get purge --auto-remove recon-ng
-sudo apt-get purge --auto-remove wpscan
-sudo apt-get purge --auto-remove wfuzz
-sudo apt-get purge --auto-remove sqlmap
-sudo apt-get purge --auto-remove hydra
-sudo apt-get purge --auto-remove curl
+sudo apt-get purge --auto-remove -y dnsrecon
+sudo apt-get purge --auto-remove -y nmap
+sudo apt-get purge --auto-remove -y theharvester
+sudo apt-get purge --auto-remove -y recon-ng
+sudo apt-get purge --auto-remove -y wpscan
+sudo apt-get purge --auto-remove -y wfuzz
+sudo apt-get purge --auto-remove -y sqlmap
+sudo apt-get purge --auto-remove -y hydra
+sudo apt-get purge --auto-remove -y curl
 #pth-net
 #pth-openchangeclient
 #pth-rpcclient
-sudo apt-get purge --auto-remove smbclient
-sudo apt-get purge --auto-remove sqsh
-sudo apt-get purge --auto-remove winexe
+sudo apt-get purge --auto-remove -y smbclient
+sudo apt-get purge --auto-remove -y sqsh
+sudo apt-get purge --auto-remove -y winexe
 #pth-wmic
 #pth-wmis
-sudo apt-get purge --auto-remove cewl
-sudo apt-get purge --auto-remove crunch
-sudo apt-get purge --auto-remove john
-sudo apt-get purge --auto-remove medusa
-sudo apt-get purge --auto-remove ncrack
-sudo apt-get purge --auto-remove mfoc
+sudo apt-get purge --auto-remove -y cewl
+sudo apt-get purge --auto-remove -y crunch
+sudo apt-get purge --auto-remove -y john
+sudo apt-get purge --auto-remove -y medusa
+sudo apt-get purge --auto-remove -y ncrack
+sudo apt-get purge --auto-remove -y mfoc
 #nfc-list
 #mfc-mfclassic
-sudo apt-get purge --auto-remove aircrack-ng
-sudo apt-get purge --auto-remove nasm
-sudo apt-get purge --auto-remove metasploit-framework
+sudo apt-get purge --auto-remove -y aircrack-ng
+sudo apt-get purge --auto-remove -y nasm
+sudo apt-get purge --auto-remove -y metasploit-framework
 #searchsploit
-sudo apt-get purge --auto-remove wireshark
-sudo apt-get purge --auto-remove proxy chains
+sudo apt-get purge --auto-remove -y wireshark
+sudo apt-get purge --auto-remove -y proxy chains
 
 
