@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 # installs kpartx and squashfs-tools
 sudo apt-get install kpartx squashfs-tools
 #
