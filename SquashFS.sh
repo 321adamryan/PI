@@ -30,3 +30,29 @@ sudo umount /mnt
 # This closes the image we opened at the beginning.
 # Change the DownloadedImage.img to what your image file name is.
 sudo kpartx -d DownloadedImage.img
+
+
+
+#-------------------Crankshaft SquashFS
+
+$ sudo kpartx -av crankshaft.img 
+#Loop which ever Loop is larger
+$ sudo mount /dev/mapper/loop0p2 /mnt
+
+$ sudo sed -i 's/^\/dev\/mmcblk/#\0/g' /mnt/etc/fstab
+
+$ sudo sed -i 's/^PARTUUID/#\0/g' /mnt/etc/fstab
+
+$ sudo rm -f /mnt/etc/console-setup/cached_UTF-8_del.kmap.gz
+
+$ sudo rm -f /mnt/etc/systemd/system/multi-user.target.wants/apply_noobs_os_config.service
+
+$ sudo rm -f /mnt/etc/systemd/system/multi-user.target.wants/raspberrypi-net-mods.service
+
+$ sudo rm -f /mnt/etc/rc3.d/S01resize2fs_once
+
+$ sudo mksquashfs /mnt crankshaftBB.img -comp lzo -e lib/modules
+
+$ sudo umount /mnt
+
+$ sudo kpartx -d crankshaft.img
